@@ -1,0 +1,41 @@
+[
+  {
+    "id": "session-9001",
+    "learnerName": "Ava Johnson",
+    "scenarioTitle": "Support Ticket Resolution",
+    "category": "Customer Operations",
+    "estimate": 9.6,
+    "actualTarget": 9,
+    "accuracyScore": 93,
+    "thresholdScore": 90,
+    "decisionScore": 100,
+    "readinessScore": 94,
+    "date": "2026-05-12"
+  },
+  {
+    "id": "session-9002",
+    "learnerName": "Noah Brooks",
+    "scenarioTitle": "Security Alert SLA",
+    "category": "Security Operations",
+    "estimate": 52,
+    "actualTarget": 28,
+    "accuracyScore": 42,
+    "thresholdScore": 65,
+    "decisionScore": 70,
+    "readinessScore": 59,
+    "date": "2026-05-12"
+  },
+  {
+    "id": "session-9003",
+    "learnerName": "Maya Chen",
+    "scenarioTitle": "Sales Conversion Forecast",
+    "category": "Revenue Operations",
+    "estimate": 17,
+    "actualTarget": 18,
+    "accuracyScore": 94,
+    "thresholdScore": 85,
+    "decisionScore": 100,
+    "readinessScore": 93,
+    "date": "2026-05-11"
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "id": "support-resolution",
+    "title": "Support Ticket Resolution",
+    "category": "Customer Operations",
+    "difficulty": "Foundation",
+    "rolePath": "Support Analyst",
+    "brief": "A support team is reviewing first-response and resolution performance after a product release spike.",
+    "metric": "Average Resolution Time",
+    "unit": "hours",
+    "target": 9,
+    "healthyRange": { "min": 7, "max": 10 },
+    "warningRange": { "min": 10.1, "max": 14 },
+    "criticalAbove": 14,
+    "context": {
+      "previous": 11.5,
+      "volume": 1280,
+      "teamCapacity": 82,
+      "blockedItems": 4
+    },
+    "decisionOptions": [
+      "Add weekend escalation coverage",
+      "Ignore the spike until next month",
+      "Reduce QA checks immediately",
+      "Close low-priority tickets without response"
+    ],
+    "correctDecision": "Add weekend escalation coverage",
+    "coachingNote": "Resolution time is near the warning threshold. Capacity and blockers make escalation coverage the safest operational response."
+  },
+  {
+    "id": "sales-conversion",
+    "title": "Sales Conversion Forecast",
+    "category": "Revenue Operations",
+    "difficulty": "Intermediate",
+    "rolePath": "Revenue Analyst",
+    "brief": "A sales team needs to estimate end-of-week conversion health after leads increased but demo attendance dropped.",
+    "metric": "Lead Conversion Rate",
+    "unit": "%",
+    "target": 18,
+    "healthyRange": { "min": 16, "max": 22 },
+    "warningRange": { "min": 11, "max": 15.9 },
+    "criticalBelow": 11,
+    "context": {
+      "previous": 19.2,
+      "leadVolume": 3400,
+      "demoAttendance": 63,
+      "followUpDelayHours": 18
+    },
+    "decisionOptions": [
+      "Prioritize follow-up within 6 hours",
+      "Increase spend before fixing follow-up",
+      "Pause all outreach",
+      "Ignore demo attendance"
+    ],
+    "correctDecision": "Prioritize follow-up within 6 hours",
+    "coachingNote": "Conversion is sensitive to response time. Fixing follow-up delay is the highest-quality decision before increasing spend."
+  },
+  {
+    "id": "delivery-risk",
+    "title": "Project Delivery Risk",
+    "category": "Project Operations",
+    "difficulty": "Advanced",
+    "rolePath": "Project Manager",
+    "brief": "A project team is 10 days from launch with multiple dependencies still unresolved.",
+    "metric": "Delivery Risk Score",
+    "unit": "/100",
+    "target": 42,
+    "healthyRange": { "min": 0, "max": 45 },
+    "warningRange": { "min": 45.1, "max": 65 },
+    "criticalAbove": 65,
+    "context": {
+      "previous": 38,
+      "blockedTasks": 6,
+      "teamCapacity": 91,
+      "daysToLaunch": 10
+    },
+    "decisionOptions": [
+      "Escalate blocked dependencies and reduce launch scope",
+      "Add new features to improve stakeholder confidence",
+      "Move QA to after launch",
+      "Wait for the next weekly sync"
+    ],
+    "correctDecision": "Escalate blocked dependencies and reduce launch scope",
+    "coachingNote": "Blocked work and high capacity pressure near launch require escalation and scope control."
+  },
+  {
+    "id": "cloud-cost-efficiency",
+    "title": "Cloud Cost Efficiency",
+    "category": "FinOps",
+    "difficulty": "Intermediate",
+    "rolePath": "Cloud Support Associate",
+    "brief": "Cloud spend increased after a traffic spike and the team needs to identify whether the unit economics are still acceptable.",
+    "metric": "Cost Per 1,000 Requests",
+    "unit": "USD",
+    "target": 4.8,
+    "healthyRange": { "min": 3.8, "max": 5.4 },
+    "warningRange": { "min": 5.5, "max": 7.2 },
+    "criticalAbove": 7.2,
+    "context": {
+      "previous": 4.2,
+      "monthlyRequests": 1180000,
+      "idleComputePct": 18,
+      "cacheHitRate": 64
+    },
+    "decisionOptions": [
+      "Improve cache hit rate and right-size idle compute",
+      "Ignore because traffic increased",
+      "Disable monitoring to reduce overhead",
+      "Double instance size immediately"
+    ],
+    "correctDecision": "Improve cache hit rate and right-size idle compute",
+    "coachingNote": "Cost per unit is rising with visible idle compute and weak cache efficiency. Optimization should target waste first."
+  },
+  {
+    "id": "security-alert-sla",
+    "title": "Security Alert SLA",
+    "category": "Security Operations",
+    "difficulty": "Advanced",
+    "rolePath": "Security Operations Trainee",
+    "brief": "A security operations queue is reviewing alert response times after a phishing simulation and failed MFA attempts.",
+    "metric": "Critical Alert Response Time",
+    "unit": "minutes",
+    "target": 28,
+    "healthyRange": { "min": 15, "max": 30 },
+    "warningRange": { "min": 30.1, "max": 45 },
+    "criticalAbove": 45,
+    "context": {
+      "previous": 34,
+      "criticalAlerts": 18,
+      "analystCapacity": 76,
+      "falsePositiveRate": 22
+    },
+    "decisionOptions": [
+      "Tune alert rules and route critical MFA events first",
+      "Suppress all phishing alerts",
+      "Wait for the monthly report",
+      "Route every alert to executives"
+    ],
+    "correctDecision": "Tune alert rules and route critical MFA events first",
+    "coachingNote": "The correct response improves priority routing while reducing noise. Suppression without review creates security risk."
+  }
+]

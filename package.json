@@ -1,0 +1,17 @@
+{
+  "name": "metricforge-performance-training-and-kpi-simulation-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MetricForge is a KPI simulation and performance training platform for estimating metrics, interpreting thresholds, improving decision quality, and tracking team readiness.",
+  "scripts": {
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start",
+    "test": "npm --prefix server test",
+    "audit:check": "npm audit --audit-level=high && npm --prefix server audit --audit-level=high && npm --prefix client audit --audit-level=high"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

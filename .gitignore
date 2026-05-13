@@ -1,1 +1,10 @@
-*.bak
+node_modules/
+client/node_modules/
+server/node_modules/
+client/dist/
+server/.env
+.env
+.env.local
+.DS_Store
+npm-debug.log*
+coverage/

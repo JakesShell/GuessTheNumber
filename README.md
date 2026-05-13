@@ -1,57 +1,104 @@
-﻿# KPI Estimation Training Dashboard
+# MetricForge Performance Training And KPI Simulation Lab
 
-## Overview
+MetricForge is a full-stack KPI simulation and performance training platform for JSA Enterprise. It helps teams practice KPI estimation, threshold interpretation, and operational decision-making before working with real business dashboards.
 
-KPI Estimation Training Dashboard is a browser-based business training tool for practicing numeric estimation and threshold awareness across common operational scenarios.
+## What This Project Solves
 
-This project is positioned as a recruiter-ready frontend portfolio piece. It upgrades a simple guessing concept into a lightweight internal training dashboard that can be used to help teams build intuition around target ranges, performance thresholds, and estimation-driven decision habits.
+Companies often promote staff into dashboards and reporting workflows without training them to understand what the numbers actually mean. MetricForge provides a safe simulation environment where learners can estimate KPIs, classify risk thresholds, choose business actions, and receive coaching feedback.
 
-## Real-World Business Use Case
+## Core Features
 
-This project maps to practical workflows relevant to:
-
-- Operations Training
-- Sales Coaching
-- Support Team Performance Reviews
-- Internal Learning Tools
-- Frontend Dashboard Prototyping
-
-A team may need to answer questions such as:
-
-- How can new staff practice estimating KPI targets?
-- How can teams build intuition around healthy performance ranges?
-- How can a simple training concept be turned into a browser-based internal tool?
-- How can lightweight gamification improve engagement in workplace learning?
-
-This kind of dashboard is useful for internal onboarding, performance training, and prototype demonstration of training-focused business tools.
-
-## Key Features
-
-- Scenario-Based KPI Training
-- Numeric Estimation Workflow
-- Higher Or Lower Feedback
-- Attempt Tracking
-- Best Round Score Tracking
-- Recent Training History Table
-- Responsive Browser-Based UI
+- KPI simulation scenarios
+- Role-based training paths
+- Estimate scoring
+- Threshold interpretation scoring
+- Decision quality scoring
+- Readiness score calculation
+- Manager coaching review
+- KPI library
+- Training history
+- Learner profile pages
+- Coaching queue
+- Readiness trend visualization
+- Completion funnel visualization
+- Skill pathway cards
+- Light and dark analytics mode
+- Role-aware simulated workflows
+- Security controls
+- AWS-readiness documentation
+- Request IDs
+- Health and readiness endpoints
+- Admin-only audit endpoint
+- PostgreSQL production database design
 
 ## Tech Stack
 
-- HTML
-- CSS
-- JavaScript
+- React + Vite frontend
+- Node.js + Express backend
+- JSON demo data layer
+- Helmet security headers
+- CORS origin restriction
+- API rate limiting
+- Zod request validation
+- Docker-ready backend
+- GitHub Actions CI workflow
 
-## Repository Contents
-
-- `index.html`
-- `styles.css`
-- `script.js`
-- `README.md`
-- `Secret Number Game 1- 10.pdf`
-
-## How To Run
-
-Open the dashboard in a browser.
+## Local Development
 
 ```powershell
-Start-Process .\index.html
+npm run install:all
+npm run dev
+```
+
+Frontend:
+
+```text
+http://localhost:5173
+```
+
+Backend:
+
+```text
+http://localhost:8080
+```
+
+Health checks:
+
+```text
+http://localhost:8080/health
+http://localhost:8080/ready
+```
+
+## Security Considerations
+
+This project includes demo-focused security controls:
+
+- Secure HTTP headers with Helmet
+- CORS restricted through `CLIENT_ORIGIN`
+- Rate limiting on API requests
+- Input validation for simulation and coaching payloads
+- Server-side permission matrix
+- Role-aware simulated authorization
+- Structured audit logs
+- Controlled error handling
+- No real employee or production KPI data
+
+Production hardening would include managed authentication, tenant isolation, encrypted storage, AWS Secrets Manager, WAF protection, centralized logging, and cloud-native monitoring.
+
+## AWS Readiness
+
+MetricForge is structured for a future AWS deployment:
+
+- React frontend can be built and hosted on S3 + CloudFront
+- Node API can run on ECS Fargate
+- `/health` endpoint supports health checks
+- `/ready` endpoint supports readiness checks
+- Environment variables are documented in `.env.example`
+- JSON logs are CloudWatch-friendly
+- Dockerfile is included for the backend service
+- AWS deployment notes are included in `docs/aws-deployment.md`
+- Database design is documented in `docs/database-design.md`
+
+## Portfolio Value
+
+MetricForge demonstrates product thinking, full-stack development, KPI logic, staff training workflows, secure API design, cloud deployment readiness, database planning, and manager-facing operational reporting.

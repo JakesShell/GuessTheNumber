@@ -1,0 +1,46 @@
+[
+  {
+    "id": "learner-101",
+    "name": "Ava Johnson",
+    "role": "Support Analyst",
+    "team": "Customer Operations",
+    "readinessScore": 84,
+    "sessionsCompleted": 18,
+    "weakestCategory": "FinOps",
+    "lastSession": "2026-05-10",
+    "status": "Ready"
+  },
+  {
+    "id": "learner-102",
+    "name": "Noah Brooks",
+    "role": "Project Coordinator",
+    "team": "Delivery Operations",
+    "readinessScore": 68,
+    "sessionsCompleted": 11,
+    "weakestCategory": "Security Operations",
+    "lastSession": "2026-05-12",
+    "status": "Coaching Needed"
+  },
+  {
+    "id": "learner-103",
+    "name": "Maya Chen",
+    "role": "Revenue Analyst",
+    "team": "Revenue Operations",
+    "readinessScore": 76,
+    "sessionsCompleted": 15,
+    "weakestCategory": "Project Operations",
+    "lastSession": "2026-05-11",
+    "status": "Improving"
+  },
+  {
+    "id": "learner-104",
+    "name": "Ethan Wright",
+    "role": "Cloud Support Associate",
+    "team": "Cloud Support",
+    "readinessScore": 59,
+    "sessionsCompleted": 7,
+    "weakestCategory": "Customer Operations",
+    "lastSession": "2026-05-09",
+    "status": "At Risk"
+  }
+]
